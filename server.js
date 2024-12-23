@@ -6,6 +6,10 @@ const app = express();
 //middleware
 app.use(morgan('dev'));
 
+app.get("/", async (req, res) => {
+    res.send("hello, friend!");
+});
+
 app.listen(3000, () => {
     console.log('Listening on port 3000');
 });
