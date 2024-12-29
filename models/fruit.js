@@ -11,5 +11,5 @@ const fruitSchema = new mongoose.Schema({
 
 const fruit = mongoose.model('fruit', fruitSchema);
 
-// share it
+// 3) share it with the rest of the app
 module.exports = fruit;
